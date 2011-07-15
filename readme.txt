@@ -4,4 +4,4 @@ This application helps students learn how to enter a 911 call into a simulated c
 
 This project uses jQuery, jQuery UI and the Google Maps API.
 
-Written by Siavash Namazi (@siavashnada)
+Created by Siavash Namazi (@siavashnada)
