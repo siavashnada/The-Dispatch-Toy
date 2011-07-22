@@ -1,3 +1,12 @@
+/*
+ # The Dispatch Toy
+ # 
+ # This stylesheet contains the formatting and layout of the application.
+ # All other styles are defined in the custom jQuery UI stylesheet "jquery-ui-1.8.14.custom.css"
+ #
+ # Author: Siavash Namazi @siavashnada
+*/
+
 body {
 	font-family: arial;
 }
@@ -8,14 +17,6 @@ noscript{
 	display:block;	
 	clear:both;
 }
-h2{
-    padding: 20px;
-	margin-bottom: -30px; 
-}
-fieldset{
-    padding: 10px;
-    margin:10px;	
-}
 label{
 	font-weight: bold;
     display:block;
@@ -24,12 +25,28 @@ label{
 	color:#0073ea;
 	padding-top:5px;
 }
+.frame{
+    float:left;
+}
+.float{
+	float:left;
+}
+.clear{ 
+	clear:both;
+}
+.ui-icon{
+	margin: 2px;
+}
+
+/* search form presentation */
+fieldset{
+    padding: 10px;
+    margin:10px;	
+}
 button{
 	-moz-box-shadow: 0 0 2px #ddd;
 	-webkit-box-shadow: 0 0 2px #ddd;
-	box-shadow: 0 0 2px #ddd;}
-.frame{
-    float:left;
+	box-shadow: 0 0 2px #ddd;
 }
 .textfield {
     background-color:white;
@@ -51,16 +68,6 @@ button{
 	-webkit-box-shadow: inset 0 0 5px #ddd;
 	box-shadow: inner 0 0 5px #ddd;
 }
-.call{
-    background-color:#E5F2FF;
-    padding:5px 15px 5px 15px;	
-    margin-top:10px;
-	min-width: 400px;
-}
-.call-info{
-	display:block;	
-	padding-top:5px;
-}
 .focused, #comments.focused{
 	border: 1px solid #0073ea;
 }
@@ -71,12 +78,6 @@ button{
     float:left;
     width:490px;	
 }	
-.frame-result{
-    float:left;	
-}
-.results{
-	min-width:350px;
-}
 #map { 
     width:440px; 
     height:280px; 
@@ -89,16 +90,31 @@ button{
 	overflow: auto;
 	width:435px;
 }
-.clear{ 
-	clear:both;
+
+/* call record presentation */
+.frame-result{
+    float:left;	
 }
+.results{
+	min-width:350px;
+}
+.call{
+    background-color:#E5F2FF;
+    padding:5px 15px 5px 15px;	
+    margin-top:10px;
+	min-width: 400px;
+}
+.call-info{
+	display:block;	
+	padding-top:6px;
+}
+
 .msg{
 	padding:5px;
 	width:380px;
 }
-.float{
-	float:left;
-}
+
+/* modal dialog presentation */
 #credits{
 	font-size: .75em;
 	clear:both;
@@ -123,8 +139,8 @@ button{
 	display:none;
 }
 #dialog img{
- border: none;
- margin-right: 5px;
+	border: none;
+	margin-right: 5px;
 } 
 #thanks{
 	line-height: 1.3;

@@ -1,3 +1,11 @@
+/*
+ # The Dispatch Toy
+ # 
+ # This script brings the application to life.
+ #
+ # Author: Siavash Namazi @siavashnada
+*/
+
 $(document).ready(function() {	
 	
 	// generate the current date upon request
@@ -137,7 +145,7 @@ $(document).ready(function() {
 		}
 		
 		$(thisCall).fadeTo(250,0.25, function(){
-			$(thisCall).append("<p><label>" + time + "</label>"  + comments + "</p>" )
+			$(thisCall).append("<p><label>" + time + "</label><span class='call-info'>"  + comments + "</span></p>" )
 		}).fadeTo(250,1);		
 		return false;
 	});
@@ -217,15 +225,24 @@ $(document).ready(function() {
 	
 	// autocomplete type codes
 	var typeCodes = [
-		"211 - Armed Robbery",
-		"187 - Murder",
+		"211 - ARMED ROBBERY",
+		"187 - HOMICIDE",
+		"459 - BURGLARY",
+		"488 - PETTY THEFT",
+		"487 - GRAND THEFT",
+		"647 - UNDER THE INFLUENCE",
+		"10851 - STOLEN VEHICLE",
+		"415 - DISTURBANCE",
+		"2735 - SPOUSAL ABUSE",
+		"242 - BATTERY",
+		"49 - TRAFFIC STOP"
 		]
 
 	$( "#calltype" ).autocomplete({
 			source: typeCodes
 		});
 
-	// format phone number as it is typed	http://snipplr.com/view/11578/jquery-snippet-to-convert-numbers-into-us-phone-number-format-as-theyre-typed/
+	// format phone number as it is typed (us)	http://snipplr.com/view/11578/jquery-snippet-to-convert-numbers-into-us-phone-number-format-as-theyre-typed/
 	$("#phonenum").keyup(function() {
 		var curchr = this.value.length;
 		var curval = $(this).val();
